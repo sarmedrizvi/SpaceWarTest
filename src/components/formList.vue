@@ -32,7 +32,7 @@
     </form>
     <div class="" v-if="!isLoader">
       <ul class="list-group">
-        <li class="list-group-item d-flex justify-content-between" v-for="l in list" :key="l._id">
+        <li class="list-group-item d-flex justify-content-between flex-wrap " v-for="l in list" :key="l._id">
           <!-- <div class="md-v-line"></div> -->
           <i
             class="fas fa-user-tie mr-4  pr-3"
@@ -41,7 +41,7 @@
             {{ l.name }}</i
           >
           <span> {{ l.comment }} </span>
-          <span class=""> {{ new Date(l.date).toLocaleString() }} </span>
+          <span class="font-weight-bold " style="font-size:12px"> {{ new Date(l.date).toLocaleString() }} </span>
         </li>
       </ul>
     </div>
